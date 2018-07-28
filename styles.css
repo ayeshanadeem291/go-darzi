@@ -1,0 +1,66 @@
+/* Header navbar */
+
+.header {
+  position: relative;
+}
+
+.header .navbar-image {
+  width: 130px;
+}
+
+.navbar {
+  background: transparent !important;
+  width: 100%;
+  position: absolute;
+}
+
+/* Homepage */
+
+.homepage-image {
+  background-image: url(assets/images/newback1.jpg);
+}
+
+.about-image,
+.help-image,
+.darzi-image {
+  background-image: url(assets/images/about.jpg);
+}
+
+.homepage,
+.about,
+.help,
+.darzi {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100%;
+  background-size: cover;
+  background-position-y: -50px;
+}
+
+.darzi {
+  overflow-y: scroll;
+}
+.jumbotron {
+  background: transparent;
+  margin-top: 100px;
+}
+
+.about .jumbotron,
+.help .jumbotron,
+.darzi .jumbotron {
+  text-align: center;
+}
+
+.about-content,
+.help-content,
+.darziForm-content {
+  padding: 0 100px;
+}
+
+.homepage .lead {
+  width: 60%;
+}
+
+.logo {
+  width: 30%;
+}
