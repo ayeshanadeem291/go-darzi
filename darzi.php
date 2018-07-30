@@ -10,7 +10,7 @@ if (isset($_POST['signUp'])) {
     $experience = clearString($_POST['experience']);
     $address = clearString($_POST['address']);
 
-    $queryResult = queryFunc("INSERT INTO darzi(name,password,email,phone,gender,experience,address) VALUES('$name','$password','$email','$phone','$gender',$experience,'$address')");
+    $queryResult = queryFunc("INSERT INTO darzii(name,password,email,phone,gender,experience,address) VALUES('$name','$password','$email','$phone','$gender',$experience,'$address')");
 
 }
 ?>

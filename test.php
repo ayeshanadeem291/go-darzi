@@ -1,6 +1,9 @@
 
 
 <?php
+
+require_once "header.php";
+
 if (isset($_POST['login'])) {
     echo "BILL";
 }
