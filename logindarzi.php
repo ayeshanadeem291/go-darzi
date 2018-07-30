@@ -5,7 +5,7 @@ if (isset($_POST['login'])) {
     echo "<h1> CHALJAAA </h1>";
     $email = clearString($_POST['email']);
     $password = hashString(clearString($_POST['password']));
-    $query = "SELECT * FROM darzi where email='$email'";
+    $query = "SELECT * FROM darzii where email='$email'";
     $result = mysqli_query($connection, $query);
     while ($row = mysqli_fetch_assoc($result)) {
         $name = $row['name'];
