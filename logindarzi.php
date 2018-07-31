@@ -2,14 +2,21 @@
 require_once "header.php";
 if (isset($_POST['login'])) {
 
-    echo "<h1> CHALJAAA </h1>";
+    
     $email = clearString($_POST['email']);
     $password = hashString(clearString($_POST['password']));
     $query = "SELECT * FROM darzii where email='$email'";
     $result = mysqli_query($connection, $query);
     while ($row = mysqli_fetch_assoc($result)) {
-        $name = $row['name'];
-        echo "<h1> $name</h1>";
+        $_SESSION["name"] = $row['name'];
+        $_SESSION["email"] = $row['email'];
+        $_SESSION["experience"] = $row['experience'];
+        $_SESSION["address"] = $row['address'];
+        $_SESSION["phone"] = $row['phone'];
+        $_SESSION["genderBox"] = $row['genderBox'];
+        header("Location: profile.php"); // redirects
+
+                
     }
 }
 
